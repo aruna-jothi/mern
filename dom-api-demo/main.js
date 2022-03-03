@@ -21,20 +21,26 @@ const createCardData = (data) => {
 
         //userid
         const userid = document.createElement('p')
-        userid.innerHTML = user.userId
+        userid.innerHTML = "User ID: " +user.userId
+
         card.appendChild(userid)
 
 
         /*create p & appendchild of card*/
         const id = document.createElement('p')
-        id.innerHTML = user.id
+        id.innerHTML = "ID: " +user.id
         card.appendChild(id)
 
 
         //title
         const title = document.createElement('p')
-        title.innerHTML = user.title
+        title.innerHTML = "Title: " +user.title
         card.appendChild(title)
+
+        //body
+        const body = document.createElement('p')
+        body.innerHTML = "Body: " +user.body
+        card.appendChild(body)
 
         //create appendchild of container
         container.appendChild(card)
